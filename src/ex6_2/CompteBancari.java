@@ -13,7 +13,7 @@ public class CompteBancari {
 		
 	}
 	
-	public CompteBancari(String dniTitular, String nomTitular, int saldo) {
+	public CompteBancari(String dniTitular, String nomTitular, double saldo) {
 		this.dniTitular = dniTitular;
 		this.nomTitular = nomTitular;
 		this.saldo = saldo;
