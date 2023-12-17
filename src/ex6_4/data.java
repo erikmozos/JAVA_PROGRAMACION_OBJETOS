@@ -5,6 +5,7 @@ public class data {
 	private int dia;
 	private int mes;
 	private int any;
+	private boolean validacio;
 
 	public data() {
 
@@ -60,11 +61,22 @@ public class data {
 			this.dia = dia;
 			this.mes = mes;
 			this.any = any;
+			this.validacio = true;
 			System.out.println("Data vàlida");
 		}else {
 			System.out.println("Data invàlida");
+			this.validacio = false;
+			
 		}
 
+	}
+
+	public boolean isValidacio() {
+		return validacio;
+	}
+
+	public void setValidacio(boolean validacio) {
+		this.validacio = validacio;
 	}
 
 	public void dema() {

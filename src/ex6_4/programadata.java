@@ -18,8 +18,10 @@ public class programadata {
 		any = sc.nextInt();
 		sc.nextLine();
 		data dataintrduida = new data(dia, mes, any);
+		if(dataintrduida.isValidacio()== true) {
 		dataintrduida.dema();
-		System.out.println("El dia següent serà " + dataintrduida.getDia()+ " " +dataintrduida.getMes()+ " " +dataintrduida.getAny());
+		System.out.println("El dia següent serà " + dataintrduida.getDia()+ "/" +dataintrduida.getMes()+ "/" +dataintrduida.getAny());
 	}
 
+}
 }
